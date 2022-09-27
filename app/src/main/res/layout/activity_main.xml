@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/numberOperation"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:onClick="onClickTextView"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/matchOperation"
+        android:layout_width="412dp"
+        android:layout_height="68dp"
+        android:layout_gravity="end"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/resultOperation"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:singleLine="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                style="@style/ActionButton"
+                android:onClick="onClear"
+                android:text="@string/ac9" />
+
+            <Button
+                android:id="@+id/disiv_btn"
+                style="@style/ActionButton"
+                android:onClick="onOperationClick"
+                android:text="@string/share" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/NumberButton"
+
+                android:onClick="onNumberClick"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_9" />
+
+            <Button
+                android:id="@+id/milt_btn"
+                style="@style/ActionButton"
+                android:onClick="onOperationClick"
+                android:text="@string/milt_btn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_6" />
+
+            <Button
+                android:id="@+id/plus_btn"
+                style="@style/ActionButton"
+                android:onClick="onOperationClick"
+                android:text="@string/plus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/NumberButton"
+                android:onClick="onNumberClick"
+                android:text="@string/_3" />
+
+            <Button
+                android:id="@+id/minus_btn"
+                style="@style/ActionButton"
+                android:onClick="onOperationClick"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/dot_btn"
+            style="@style/NumberButton"
+            android:onClick="onNumberClick"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/NumberButton"
+            android:onClick="onNumberClick"
+            android:text="@string/_0" />
+
+        <Button
+            android:id="@+id/equal_btn"
+            style="@style/NumberButton"
+            android:onClick="onOperationClick"
+            android:text="=" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
