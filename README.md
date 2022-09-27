@@ -1,4 +1,4 @@
 # Calculator_Kt
 
 
-Калькулятоор на котлине в среде Android Studio
+Калькулятор на котлине в среде Android Studio
